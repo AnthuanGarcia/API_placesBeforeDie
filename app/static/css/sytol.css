@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inconsolata', monospace;
+	color: #080811;
+	background: #f0f0f0;
+}
+
+a {
+	text-decoration: none;
+	color: #c61dc8;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #333;
+	text-decoration: underline;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+/* Content */
+
+.content {
+	margin: 1vw;
+	max-width: 1200px;
+	min-height: 600px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: inline-flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: left;
+	/*flex: none;*/
+	position: relative;
+}
+
+.title {
+	position: absolute;
+	font-size: 8vw;
+	margin: 0;
+	pointer-events: none;
+	bottom: 10%;
+	left: 35%;
+}
+
+.title--left {
+	left: auto;
+	right: 35%;
+}
+
+.text {
+	font-size: 1.50em;
+	position: absolute;
+	width: 50%;
+	bottom: calc(10% + 8vw);
+	left: 40%;
+	pointer-events: none;
+}
+
+.text--left {
+	left: 10%;
+	text-align: right;
+}
+
+.deco-bg {
+	line-height: 1.6;
+}
+
+.deco-bg--color-1 {
+	background: -webkit-linear-gradient(bottom, #807cfd 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #807cfd 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-2 {
+	background: -webkit-linear-gradient(bottom, #fdf164 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #fdf164 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-3 {
+	background: -webkit-linear-gradient(bottom, #ff57e3 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #ff57e3 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-4 {
+	background: -webkit-linear-gradient(bottom, #c2f3b0 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #c2f3b0 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-5 {
+	background: -webkit-linear-gradient(bottom, #ffb857 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #ffb857 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-6 {
+	background: -webkit-linear-gradient(bottom, #9ab7f0 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #9ab7f0 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-7 {
+	background: -webkit-linear-gradient(bottom, #c4ff57 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #c4ff57 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-8 {
+	background: -webkit-linear-gradient(bottom, #ffffff 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #ffffff 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-9 {
+	background: -webkit-linear-gradient(bottom, #d130fa 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #d130fa 90%, transparent 90%, transparent);
+}
+
+.deco-bg--color-10 {
+	background: -webkit-linear-gradient(bottom, #f0b8c9 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #f0b8c9 90%, transparent 90%, transparent);
+}
+
+.background--1{
+	background-color: #a41fa7;
+}
+
+.background--2{
+	background: rgb(255,51,254);
+	background: linear-gradient(34deg, rgba(255,51,254,1) 0%, rgba(164,255,0,1) 100%);
+}
+
+.background--3{
+	background-color: #6900cc;
+}
+
+.background--4{
+	background-color: #8bb9e4;
+}
+
+.background--5{
+	background-color: #da3c8b;
+}
+
+.background--6{
+	background-color: #f8cae1;
+}
+
+.background--7{
+	background-color: #08a885;
+}
+
+.background--8{
+	background-color: #f9fabe;
+}
+
+.background--9{
+	background-color: #95fd83;
+}
+
+.background--10{
+	background: rgb(203, 203, 248);
+}
+
+/* Adjust the layout for smaller screens */
+
+@media screen and (max-width: 50em) {
+	.section--intro {
+		min-height: 0;
+	}
+	.codrops-header__tagline,
+	.github {
+		margin: 1em 0 0;
+		width: 100%;
+	}
+	.fragment-wrap {
+		width: 80vw;
+		margin: 0;
+	}
+	.fragment-wrap--right {
+		margin: 0;
+	}
+	.text {
+		width: 80%;
+		left: 10%;
+		bottom: auto;
+		top: 10%;
+	}
+	.title {
+		font-size: 16vw;
+	}
+}

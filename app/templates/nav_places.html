@@ -1,0 +1,5 @@
+<nav class="menu">
+    {% for place in lugares %}
+        <div class="menu__item"><a class="menu__item-inner" href="/place/{{ place.name }}">{{ place.name }}</a></div>
+    {% endfor %}
+</nav>

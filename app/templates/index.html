@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fragment.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sytol.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body class="background--{{ temas }}">
+    <main>
+        <section class="section section--flow">
+            <div class="content">
+                {% include 'com_streetview.html' %}
+                <h2 class="title" style="z-index: 4;">{{ lugar["name"] }}</h2>
+                <p class="text" style="z-index: 4;"><span class="deco-bg deco-bg--color-{{ temas }}">{{ lugar["description"] }}</span></p>
+            </div>
+            {% include 'nav_places.html' %}
+            <!--<script type="text/javascript" src= "{{ url_for('static', filename='js/menu.js') }}"></script>-->
+        </section>
+    </main>
+</body>
+</html>
